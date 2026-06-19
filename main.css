@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Variables */
+:root {
+    /*--primary-green: #7F9685;*/
+    --primary-green: #3c9180;
+    --primary-green-lighter: #72b9ab;
+    --primary-green-darker: #2f8171;
+    --grey: #c4c4c4;
+    --color-sub-heading: #585858;
+}
+
+
+/* Base */
+body {
+    background-color: #ebebeb;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.page {
+    max-width: 1500px;
+}
+
+body>.container-fluid {
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    border-radius: 0px;
+}
+
+.navbar .navbar-brand {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.navbar-heading {
+    margin: 15px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Page Component */
+.well {
+    background-color: white !important;
+    border-radius: 10px;
+}
+
+
+/* Make rwo columns equal height */
+.main-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content>[class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.well {
+    height: 100%;
+}
+
+
+/* Table */
+table.dataTable tr.selected td,
+table.dataTable td.selected {
+    background: #F3F6F4 !important;
+}
+
+/* Pill buttons (refresh */
+.bttn-unite.bttn-primary:after {
+    background: var(--primary-green);
+}
+
+.bttn-unite.bttn-primary:before {
+    background: var(--primary-green);
+}
+
+.bttn-unite.bttn-primary {
+    border-color: var(--primary-green);
+    color: black;
+}
+
+.bttn-unite.bttn-primary:focus,
+.bttn-unite.bttn-primary:hover {
+    background: var(--primary-green);
+}
+
+/* Slider */
+.irs--shiny .irs-bar {
+    background: var(--primary-green);
+}
+
+.irs--shiny .irs-from,
+.irs--shiny .irs-to,
+.irs--shiny .irs-single {
+    background-color: var(--primary-green);
+}
+
+.irs--shiny .irs-min,
+.irs--shiny .irs-max {
+    background-color: rgba(182, 182, 182, 0.5);
+}
+
+/* Slider headers */
+form[role="complementary"] h4,
+form[role="complementary"] h5 {
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+
+.tooltip>.tooltip-inner {
+    width: 400px;
+    color: white;
+    background-color: var(--primary-green);
+}
+
+/* section headers */
+h3 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Unit text */
+h4 {
+    color: var(--color-sub-heading);
+    font-size: 17px;
+    margin-top: 35px;
+}
+
+.economic-values h4 {
+    margin-top: 10px;
+}
+
+
+/* please select message (check no actual errors appear) */
+.shiny-output-error {
+    font-size: 16px;
+    top: 30px !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.fa,
+.fas {
+    font-size: 14px;
+    padding: 0px 0px;
+}
+
+/* buttons */
+.btn {
+    font-size: 15px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(73, 73, 73);
+}
+
+.btn-group>button {
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+    margin-bottom: 5px;
+}
+
+.btn-default {}
+
+
+.btn-default.active,
+.btn-default:active,
+.open>.dropdown-toggle.btn-default {
+    background-color: var(--primary-green);
+    color: white;
+    border-color: var(--primary-green);
+    box-shadow: none !important;
+
+}
+
+.btn-default:hover,
+.btn-default.active.focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:active.focus,
+.btn-default:active:focus,
+.btn-default:active:hover,
+.open>.dropdown-toggle.btn-default.focus,
+.open>.dropdown-toggle.btn-default:focus,
+.open>.dropdown-toggle.btn-default:hover {
+    background-color: var(--primary-green-lighter);
+    color: white;
+    border-color: var(--primary-green-lighter);
+    box-shadow: none !important;
+}
+
+/* Checkboxes */
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-primary-o label::after {
+    background-color: var(--primary-green) !important;
+}
+.pretty input:checked ~ .state.p-primary-o label::before, .pretty.p-toggle .state.p-primary-o label::before {
+    border-color: var(--primary-green) !important;
+}
+
+
+
+/* Download button */
+#download_btn_require {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+}
+
+.fixed-download-btn {
+    height: 60px;
+    width: 60px;
+    background-color: var(--primary-green);
+    border-radius: 38px;
+    border: 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fixed-download-btn:hover {
+    background-color: var(--primary-green-darker);
+}
+
+.fixed-download-btn>i {
+    color: white;
+    font-size: 18pt;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/* BAR CHART CSS PATHS */
+/* Bar text */
+.main-svg>.cartesianlayer>.subplot>.plot>.barlayer>.bars>.points>.point>text {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 13px !important;
+    padding-right: 5px;
+}
+
+/* bars */
+.main-svg>.cartesianlayer>.subplot>.plot>.barlayer>.bars>.points>.point>path {
+    stroke: none !important;
+}
+
+/* unit text */
+.yaxislayer-above>.ytick>text {
+    padding-right: 5px !important;
+    fill: #808080 !important;
+    font-size: 14px !important;
+}
+
+.xaxislayer-above>.xtick>text {
+    margin-top: 5px !important;
+    fill: #808080 !important;
+    font-size: 13px !important;
+}
+
+/* legend colours */
+.legendsymbols>.legendpoints>path {
+    stroke: none !important;
+}
+
+/* axis titles */
+.infolayer>.g-ytitle>.ytitle,
+.infolayer>.g-xtitle>.xtitle {
+    fill: #646464 !important;
+    font-size: 15px !important;
+}
